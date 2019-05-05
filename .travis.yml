@@ -15,7 +15,7 @@ notifications:
 
 before_install:
   - sudo mkdir -p /usr/share/fonts/opentype/
-  - sudo mv ./interview/fonts/AdobeSongStd.otf /usr/share/fonts/opentype/
+  - sudo mv hadyang/interview/fonts/AdobeSongStd.otf /usr/share/fonts/opentype/
   - sudo mkfontscale
   - sudo mkfontdir
   - sudo fc-cache -fv
@@ -23,7 +23,6 @@ before_install:
 
 install:
   - npm install -g gitbook-cli
-  - npm install -g prismjs
   - gitbook install
 
 script:
