@@ -16,7 +16,7 @@ notifications:
 before_install:
   - sudo mkdir -p /usr/share/fonts/opentype/
   - ls ./
-  - sudo mv hadyang/interview/fonts/AdobeSongStd.otf /usr/share/fonts/opentype/
+  - sudo mv fonts/AdobeSongStd.otf /usr/share/fonts/opentype/
   - sudo mkfontscale
   - sudo mkfontdir
   - sudo fc-cache -fv
